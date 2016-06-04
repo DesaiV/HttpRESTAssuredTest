@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
-    <groups>
-    	<run>
-    		<include name="functest"/>
-    	</run>
-    </groups>
-    <classes>
-      <class name="com.http.test.test_engg_assignment.HttpGetMethodTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test name="all-tests">
+        <packages>
+            <package name="com.http.test.test_engg_assignment"/>
+        </packages>
+    </test>
+</suite>
