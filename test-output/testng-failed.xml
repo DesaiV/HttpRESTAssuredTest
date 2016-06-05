@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.http.test.test_engg_assignment.HttpPostMethodTest">
+      <class name="com.http.test.test_engg_assignment.HttpheaderMethod">
         <methods>
-          <include name="testPostEmpSalJson"/>
+          <include name="testRequesteHeaders"/>
         </methods>
-      </class> <!-- com.http.test.test_engg_assignment.HttpPostMethodTest -->
+      </class> <!-- com.http.test.test_engg_assignment.HttpheaderMethod -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

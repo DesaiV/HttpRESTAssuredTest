@@ -36,9 +36,14 @@ public class HttpGetMethodTest {
 	 */
 	@Test(groups={"functest"})
 	public void testUrlElement() {
-		given().contentType("application/json").
-		when().get(baseurl+serviceEndpoint).
-		then().statusCode(200).and().body("url",equalTo(baseurl+serviceEndpoint));	
+		given().
+			contentType("application/json").
+		when().
+			get(baseurl+serviceEndpoint).
+		then().log().all().
+			statusCode(200).
+			and().
+			body("url",equalTo(baseurl+serviceEndpoint));	
 	}
 	
 	/**
@@ -46,9 +51,12 @@ public class HttpGetMethodTest {
 	 */
 	@Test(groups={"functest"})
 	public void testOrigin(){
-		given().contentType("application/json").
-		when().get(baseurl+serviceEndpoint).
-		then().body("origin",not(equalTo("")));	
+		given().
+			contentType("application/json").
+		when().
+			get(baseurl+serviceEndpoint).
+		then().log().all().
+			body("origin",not(equalTo("")));	
 	}
 	
 	/**
@@ -62,9 +70,11 @@ public class HttpGetMethodTest {
 		then().body();	
 	}*/
 	public void testDataValue(){
-	String json = (given().contentType("application/json").
-			when().get(baseurl+serviceEndpoint+"?data=value&data1=value2").
-			//then().body("data",not(equalTo("")));
+	String json = 
+			(given().
+					contentType("application/json").
+			when().log().all().
+					get(baseurl+serviceEndpoint+"?data=value&data1=value2").
 			asString());
 	Object document = Configuration.defaultConfiguration().jsonProvider().parse(json);
 	/*String dataValue = JsonPath.
