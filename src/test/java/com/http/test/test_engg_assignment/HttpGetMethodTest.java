@@ -1,17 +1,17 @@
 package com.http.test.test_engg_assignment;
 
 import static com.jayway.restassured.RestAssured.*;
-import static  com.jayway.restassured.matcher.RestAssuredMatchers.*;
+
 import static  org.hamcrest.Matchers.*;
 
-import org.testng.annotations.BeforeTest;
+
 import org.testng.annotations.Test;
 
-import com.jayway.jsonpath.Configuration;
-import com.jayway.restassured.http.ContentType;
-import com.jayway.restassured.path.json.JsonPath;
 
-@SuppressWarnings("deprecation")
+import com.jayway.restassured.http.ContentType;
+
+
+
 public class HttpGetMethodTest {
 	
 	private String baseurl ="http://httpbin.org"; 
@@ -22,7 +22,7 @@ public class HttpGetMethodTest {
 
 	
 	/**
-	 * Test Case 1 : Check response status code is 200 and json element <code>url = "http://httpbin.org"</code> 
+	 * Test Case 1 : Check response status code is 200 and json element <code>url = "http://httpbin.org/get"</code> 
 	 */
 	@Test
 	public void testUrlElement() {

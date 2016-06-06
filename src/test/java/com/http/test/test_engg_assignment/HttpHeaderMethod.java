@@ -1,7 +1,7 @@
 package com.http.test.test_engg_assignment;
 
 import static com.jayway.restassured.RestAssured.*;
-import static com.jayway.restassured.matcher.RestAssuredMatchers.*;
+
 import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.Test;

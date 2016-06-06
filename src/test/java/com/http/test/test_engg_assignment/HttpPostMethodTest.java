@@ -1,21 +1,18 @@
 package com.http.test.test_engg_assignment;
 
 import static com.jayway.restassured.RestAssured.*;
-import static  com.jayway.restassured.matcher.RestAssuredMatchers.*;
+
 import static  org.hamcrest.Matchers.*;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.jayway.restassured.http.ContentType;
-import com.jayway.restassured.path.json.JsonPath;
 
 import dto.EmployeeDetailDto;
 
 public class HttpPostMethodTest {
 	
-	private String baseurl ="http://httpbin.org"; 
-	private String serviceEndpoint ="/post";
+	
 	
 	/**
 	 * Test Case 1: Test result of form submit

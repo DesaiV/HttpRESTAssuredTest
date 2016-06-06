@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="12067" started-at="2016-06-06T19:49:55Z" finished-at="2016-06-06T19:50:07Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="12067" started-at="2016-06-06T19:49:55Z" finished-at="2016-06-06T19:50:07Z">
+      <class name="com.http.test.test_engg_assignment.HttpGetMethodTest">
+        <test-method status="PASS" signature="testDataValue()[pri:0, instance:com.http.test.test_engg_assignment.HttpGetMethodTest@380fb434]" name="testDataValue" duration-ms="8892" started-at="2016-06-06T12:49:55Z" finished-at="2016-06-06T12:50:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataValue -->
+        <test-method status="PASS" signature="testOrigin()[pri:0, instance:com.http.test.test_engg_assignment.HttpGetMethodTest@380fb434]" name="testOrigin" duration-ms="411" started-at="2016-06-06T12:50:03Z" finished-at="2016-06-06T12:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrigin -->
+        <test-method status="PASS" signature="testUrlElement()[pri:0, instance:com.http.test.test_engg_assignment.HttpGetMethodTest@380fb434]" name="testUrlElement" duration-ms="402" started-at="2016-06-06T12:50:04Z" finished-at="2016-06-06T12:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUrlElement -->
+      </class> <!-- com.http.test.test_engg_assignment.HttpGetMethodTest -->
+      <class name="com.http.test.test_engg_assignment.HttpPostMethodTest">
+        <test-method status="PASS" signature="testPostEmpNameJson()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@783e6358]" name="testPostEmpNameJson" duration-ms="1575" started-at="2016-06-06T12:50:04Z" finished-at="2016-06-06T12:50:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostEmpNameJson -->
+        <test-method status="PASS" signature="testPostEmpSalJson()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@783e6358]" name="testPostEmpSalJson" duration-ms="304" started-at="2016-06-06T12:50:06Z" finished-at="2016-06-06T12:50:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostEmpSalJson -->
+        <test-method status="PASS" signature="testPostFormData()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@783e6358]" name="testPostFormData" duration-ms="224" started-at="2016-06-06T12:50:06Z" finished-at="2016-06-06T12:50:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostFormData -->
+        <test-method status="PASS" signature="testPostJson()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@783e6358]" name="testPostJson" duration-ms="225" started-at="2016-06-06T12:50:06Z" finished-at="2016-06-06T12:50:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostJson -->
+      </class> <!-- com.http.test.test_engg_assignment.HttpPostMethodTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
