@@ -14,9 +14,12 @@ public class HttpHeaderMethod {
 
 	private String baseurl = "http://httpbin.org";
 	private String serviceEndpoint = "/headers";
-
+	
+	/**
+	 * Test Case 1: Test response headers
+	 */
 	@Test
-	public void testRepsponseHeaders() {
+	public void testResponseHeaders() {
 
 		given().
 			head(baseurl + serviceEndpoint).
@@ -27,6 +30,9 @@ public class HttpHeaderMethod {
 			and().header("Server", "nginx");
 	}
 
+	/**
+	 *  Test Case 2: Test request headers
+	 */
 	@Test
 	public void testRequesteHeaders() {
 		Header first = new Header("Headers1", "headerValue1");

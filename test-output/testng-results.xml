@@ -1,29 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9084" started-at="2016-06-04T19:06:41Z" finished-at="2016-06-04T19:06:50Z">
+  <suite name="Suite" duration-ms="9747" started-at="2016-06-06T05:06:03Z" finished-at="2016-06-06T05:06:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9084" started-at="2016-06-04T19:06:41Z" finished-at="2016-06-04T19:06:50Z">
+    <test name="all-tests" duration-ms="9747" started-at="2016-06-06T05:06:03Z" finished-at="2016-06-06T05:06:13Z">
+      <class name="com.http.test.test_engg_assignment.HttpGetMethodTest">
+        <test-method status="PASS" signature="testDataValue()[pri:0, instance:com.http.test.test_engg_assignment.HttpGetMethodTest@26be92ad]" name="testDataValue" duration-ms="6488" started-at="2016-06-05T22:06:03Z" finished-at="2016-06-05T22:06:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataValue -->
+        <test-method status="PASS" signature="testOrigin()[pri:0, instance:com.http.test.test_engg_assignment.HttpGetMethodTest@26be92ad]" name="testOrigin" duration-ms="271" started-at="2016-06-05T22:06:09Z" finished-at="2016-06-05T22:06:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrigin -->
+        <test-method status="PASS" signature="testUrlElement()[pri:0, instance:com.http.test.test_engg_assignment.HttpGetMethodTest@26be92ad]" name="testUrlElement" duration-ms="362" started-at="2016-06-05T22:06:10Z" finished-at="2016-06-05T22:06:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUrlElement -->
+      </class> <!-- com.http.test.test_engg_assignment.HttpGetMethodTest -->
+      <class name="com.http.test.test_engg_assignment.HttpHeaderMethod">
+        <test-method status="PASS" signature="testRequesteHeaders()[pri:0, instance:com.http.test.test_engg_assignment.HttpHeaderMethod@14acaea5]" name="testRequesteHeaders" duration-ms="324" started-at="2016-06-05T22:06:10Z" finished-at="2016-06-05T22:06:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequesteHeaders -->
+        <test-method status="PASS" signature="testResponseHeaders()[pri:0, instance:com.http.test.test_engg_assignment.HttpHeaderMethod@14acaea5]" name="testResponseHeaders" duration-ms="211" started-at="2016-06-05T22:06:10Z" finished-at="2016-06-05T22:06:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseHeaders -->
+      </class> <!-- com.http.test.test_engg_assignment.HttpHeaderMethod -->
       <class name="com.http.test.test_engg_assignment.HttpPostMethodTest">
-        <test-method status="PASS" signature="testPostEmpNameJson()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@4678c730]" name="testPostEmpNameJson" duration-ms="7997" started-at="2016-06-04T12:06:41Z" finished-at="2016-06-04T12:06:49Z">
+        <test-method status="PASS" signature="testPostEmpNameJson()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@46d56d67]" name="testPostEmpNameJson" duration-ms="1209" started-at="2016-06-05T22:06:11Z" finished-at="2016-06-05T22:06:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostEmpNameJson -->
-        <test-method status="PASS" signature="testPostEmpSalJson()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@4678c730]" name="testPostEmpSalJson" duration-ms="317" started-at="2016-06-04T12:06:49Z" finished-at="2016-06-04T12:06:49Z">
+        <test-method status="PASS" signature="testPostEmpSalJson()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@46d56d67]" name="testPostEmpSalJson" duration-ms="242" started-at="2016-06-05T22:06:12Z" finished-at="2016-06-05T22:06:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostEmpSalJson -->
-        <test-method status="PASS" signature="testPostFormData()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@4678c730]" name="testPostFormData" duration-ms="336" started-at="2016-06-04T12:06:49Z" finished-at="2016-06-04T12:06:50Z">
+        <test-method status="PASS" signature="testPostFormData()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@46d56d67]" name="testPostFormData" duration-ms="271" started-at="2016-06-05T22:06:12Z" finished-at="2016-06-05T22:06:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostFormData -->
-        <test-method status="PASS" signature="testPostJson()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@4678c730]" name="testPostJson" duration-ms="338" started-at="2016-06-04T12:06:50Z" finished-at="2016-06-04T12:06:50Z">
+        <test-method status="PASS" signature="testPostJson()[pri:0, instance:com.http.test.test_engg_assignment.HttpPostMethodTest@46d56d67]" name="testPostJson" duration-ms="232" started-at="2016-06-05T22:06:12Z" finished-at="2016-06-05T22:06:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostJson -->
       </class> <!-- com.http.test.test_engg_assignment.HttpPostMethodTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- all-tests -->
+  </suite> <!-- Suite -->
 </testng-results>

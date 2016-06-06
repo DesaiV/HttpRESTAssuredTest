@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.jayway.jsonpath.Configuration;
+import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.path.json.JsonPath;
 
 @SuppressWarnings("deprecation")
@@ -16,25 +17,14 @@ public class HttpGetMethodTest {
 	private String baseurl ="http://httpbin.org"; 
 	private String serviceEndpoint ="/get";
 	
-	@BeforeTest
-	public void Setup(){
-		
-		
-	}
 	
-	@Test
-	public void testjsonPrint(){
-		System.out.println(given().contentType("application/json").
-		when().get(baseurl+serviceEndpoint+"?data=value&data1=value2").
-		//then().body("data",not(equalTo("")));
-		asString());
-	}
+	
 
 	
 	/**
-	 * Test Case 1 : Check statuscode = 200 and url = "http://httpbin.org" 
+	 * Test Case 1 : Check response status code is 200 and json element <code>url = "http://httpbin.org"</code> 
 	 */
-	@Test(groups={"functest"})
+	@Test
 	public void testUrlElement() {
 		given().
 			contentType("application/json").
@@ -47,9 +37,9 @@ public class HttpGetMethodTest {
 	}
 	
 	/**
-	 * Test Case 2 : origin not null
+	 * Test Case 2 : Check json element <code>origin</code> is not null
 	 */
-	@Test(groups={"functest"})
+	@Test
 	public void testOrigin(){
 		given().
 			contentType("application/json").
@@ -60,25 +50,18 @@ public class HttpGetMethodTest {
 	}
 	
 	/**
-	 * Test Case 3 : 
+	 * Test Case 3 : Test result of query parameters 
 	 * 
 	 */
-	/*@Test
+	@Test
 	public void testDataValue(){
-		given().contentType("application/json").
-		when().get(baseurl+serviceEndpoint+"?data=value&data1=value2").
-		then().body();	
-	}*/
-	public void testDataValue(){
-	String json = 
-			(given().
-					contentType("application/json").
+	
+			given().
+				contentType("application/json").
 			when().log().all().
-					get(baseurl+serviceEndpoint+"?data=value&data1=value2").
-			asString());
-	Object document = Configuration.defaultConfiguration().jsonProvider().parse(json);
-	/*String dataValue = JsonPath.
-			read(document,"$.args.data");*/
+				get(baseurl+serviceEndpoint+"?data=value&data1=value2").
+			then().log().all().
+				contentType(ContentType.JSON).body("args.data",equalTo("value"));
 	}
 	
 }
