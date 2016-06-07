@@ -10,7 +10,7 @@ import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Header;
 import com.jayway.restassured.response.Headers;
 
-public class HttpHeaderMethod {
+public class HttpHeaderMethodTest {
 
 	private String baseurl = "http://httpbin.org";
 	private String serviceEndpoint = "/headers";
