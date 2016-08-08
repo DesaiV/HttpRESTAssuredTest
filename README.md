@@ -1,4 +1,4 @@
-# test-engg-assignment
+# HttpRESTAssuredTest
 
 Source code is to showcase Test for /get, /post and /headers service endpoints hosted at http://httpbin.org.
 
@@ -85,9 +85,9 @@ Test Case 2: Test request headers
 Steps to execute test locally
 
 1) Install  Maven (After All installation steps. write mvn -v on command prompt to check mvn version )
-2) Download all files from this link " https://github.com/DesaiV/test-engg-assignment "
+2) Download all files from this link " https://github.com/DesaiV/HttpRESTAssuredTest "
 3) Type command " cd Path of the pom.xml file "
 4) Type command " mvn test " it will start test.
 
 Git repository has been integrated with travis ci. Travis build will be trigged when code changes push into Git repository. latest build report
-including test case results can be viewed at " https://travis-ci.org/DesaiV/test-engg-assignment ".
+including test case results can be viewed at " https://travis-ci.org/DesaiV/HttpRESTAssuredTest ".
